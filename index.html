@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - IndexedDB</title>
+</head>
+<body>
+    <h1>CRUD Operations with IndexedDB</h1>
+    <h3 style="margin: 0px;">Add Student</h3>
+    <table>
+        <tr>  
+            <td>
+                First Name  
+            </td>  
+            <td>  
+                <input type="text" id="firstName" />  
+            </td>  
+        </tr>
+        <tr>  
+            <td>Last Name</td>  
+            <td>  
+                <input type="text" id="lastName" />  
+            </td>  
+        </tr>  
+        <tr>  
+            <td>City</td>  
+            <td>  
+                <input type="text" id="city" />  
+            </td>  
+        </tr>  
+        <tr>  
+            <td>Mobile</td>  
+            <td>  
+                <input type="text" id="mobile" />  
+            </td>  
+        </tr>
+        <tr>  
+            <td></td>  
+            <td>  
+                <input type="button" name="addBtn" value="Add" id="addBtn" />  
+                <input type="button" name="clearBtn" value="Clear" id="clearBtn" />     
+            </td>  
+        </tr>
+    </table>
+  
+    <br>
+    <h3 style="margin: 0px;">Search student</h3>
+    <table>  
+        <tr>  
+            <td>Enter ID</td>  
+            <td>  
+                <input type="text" id="search" />  
+                <input type="button" value="Show" id="searchBtn" />
+                <input type="button" value="Delete" id="deleteBtn" />
+            </td>  
+        </tr>  
+    </table>  
+    <br>
+
+    <h3 style="margin: 0px;">Update Student</h3>
+    <table>
+        <tr>  
+            <td>
+                Key
+            </td>  
+            <td>  
+                <input type="text" id="uKey" />  
+            </td>  
+        </tr>
+        <tr>  
+            <td>
+                First Name  
+            </td>  
+            <td>  
+                <input type="text" id="uFirstName" />  
+            </td>  
+        </tr>
+        <tr>  
+            <td>Last Name</td>  
+            <td>  
+                <input type="text" id="uLastName" />  
+            </td>  
+        </tr>  
+        <tr>  
+            <td>City</td>  
+            <td>  
+                <input type="text" id="uCity" />  
+            </td>  
+        </tr>  
+        <tr>  
+            <td>Mobile</td>  
+            <td>  
+                <input type="text" id="uMobile" />  
+            </td>  
+        </tr>
+        <tr>  
+            <td></td>  
+            <td>  
+                <input type="button" value="Update" id="updateBtn" />     
+            </td>  
+        </tr>
+    </table>  
+
+    <br />  
+
+    <h3 style="margin: 0px;">Student Data
+        <input type="button" value="Show All" id="showAllBtn" /> </h3>
+    <div id="data"></div>  
+    <script src="script.js"></script>
+</body>
+</html>
